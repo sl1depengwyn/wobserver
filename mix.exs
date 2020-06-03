@@ -76,8 +76,8 @@ defmodule Wobserver.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 2.0"},
-      {:plug, "~> 1.7"},
-      {:plug_cowboy, "~> 2.0"},
+      {:plug, "~> 1.10"},
+      {:plug_cowboy, "~> 2.1"},
       {:jason, "~> 1.1"},
       {:credo, "~> 1.0", only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
@@ -87,7 +87,8 @@ defmodule Wobserver.Mixfile do
       {:poison, "> 0.0.0"},
       {:inch_ex, "~> 2.0", only: [:dev, :test]},
       {:meck, "~> 0.8.4", only: :test},
-      {:websocket_client, "~> 1.2"}
+      {:websocket_client, "~> 1.4"},
+      {:phoenix, "~> 1.5.0"}
     ]
   end
 end
