@@ -78,5 +78,5 @@ defmodule Wobserver.Security do
 
   @spec hmac(String.t | list(String.t), String.t) :: String.t
   defp hmac(encryption_key, data),
-    do: :crypto.hmac(:sha256, encryption_key, data)
+    do: :crypto.mac(:hmac, :sha256, encryption_key, data)
 end
